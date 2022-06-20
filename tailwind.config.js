@@ -1,15 +1,10 @@
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
-  theme: {
-    container:{
-      center:true,
+    content: [
+      "./pages/**/*.{js,ts,jsx,tsx}",
+      "./components/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {},
     },
-    extend: {},
-  },
-  plugins: [
-    require('tailwindcss-rtl'),
-  ],
-}
+    plugins: [],
+  }
