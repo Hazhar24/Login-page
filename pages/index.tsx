@@ -2,10 +2,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import {FaShoppingCart} from "@react-icons/all-files/Fa/FaShoppingCart";
-
-
-
+import { FaShoppingCart } from "@react-icons/all-files/Fa/FaShoppingCart";
+import Card1 from './Card1';
 
 
 
@@ -32,6 +30,15 @@ export default function index() {
         <div className=' px-2'>
           <Image src='/Images/shopping.jpg' width={300} height={250} alt="shopping" ></Image>
         </div>
+      </div>
+      <div className=' pt-6'>
+        <Image src='/Images/1.jpg' width={1000} height={600} ></Image>
+      </div>
+      <div className=' flex flex-wrap justify-around'>
+        <Card1 Image={'/Images/2.jpg'} price='Price 200 $' discount='Real price' />
+        <Card1 Image={'/Images/3.jpg'} price='Price 280 $' discount='Real price' />
+        <Card1 Image={'/Images/4.jpg'} price='Price 500 $' discount='Discount' />
+        <Card1 Image={'/Images/5.jpg'} price='Price 270 $' discount='Discount' />
       </div>
     </div>
   )
